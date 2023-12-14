@@ -6,7 +6,6 @@ import NewComment from "./NewComment.jsx";
 
 
 
-
 export default function Post({ post }){
 
     return (
