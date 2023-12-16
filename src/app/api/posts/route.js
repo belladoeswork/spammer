@@ -10,6 +10,24 @@ export async function GET() {
 }
 
 
+// // Get all posts
+// export async function GET() {
+//   try {
+//     // Retrieve all posts ordered by createAt in descending order
+//     const posts = await prisma.post.findMany({
+//       orderBy: {
+//         createAt: 'desc',
+//       },
+//     });
+
+//     return NextResponse.json({ success: true, posts });
+//   } catch (error) {
+//     return NextResponse.json({ success: false, error: error.message });
+//   }
+// }
+
+
+
 
 //create new post
 export async function POST(request, response) {

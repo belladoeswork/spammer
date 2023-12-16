@@ -21,7 +21,6 @@ export async function GET() {
     const post = await prisma.post.findFirst({
       where: { id: postId },
     });
-    console.log(post.likes)
 
     if (!post) {
       return NextResponse.json({

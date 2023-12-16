@@ -2,7 +2,6 @@ import Post from "./Post.jsx";
 import { prisma } from "@/lib/prisma.js";
 
 
-
 export default async function Posts() {
 
   const posts = await prisma.post.findMany({
@@ -23,3 +22,5 @@ export default async function Posts() {
     </div>
   );
 }
+
+

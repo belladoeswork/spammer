@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation.js";
 import { useState } from "react";
 
 
+
 export default function NewPost() {
   const [postText, setPostText] = useState("");
   const router = useRouter();
